@@ -1,0 +1,68 @@
+name: ai_receipt_tracker
+description: AI Receipt Tracker - Final Exam Project
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State Management 
+  flutter_bloc: ^9.0.0 
+
+  # Dependency Injection 
+  get_it: ^8.0.0
+
+  # Network & Google Gemini AI
+  dio: ^5.5.0
+  google_generative_ai: ^0.4.0 
+  json_annotation: ^4.9.0
+
+  # Routing 
+  auto_route: ^8.0.0
+
+  # Image Selection
+  image_picker: ^1.1.2
+
+ 
+
+  # Database & Offline-First 
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  sqflite_common_ffi: ^2.4.0+2 # จำเป็นสำหรับการรันบน Desktop (Windows)
+
+  # Storage & Preferences
+  shared_preferences: ^2.3.2
+
+  # Environment variables 
+  flutter_dotenv: ^5.1.0
+
+  # UI & Charts (สำหรับ Dashboard สรุปยอด)
+  fl_chart: ^0.70.0
+
+  # Functional Programming (เกณฑ์ข้อ 1: Error Handling ด้วย Either)
+  dartz: ^0.10.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Code Generation
+  build_runner: ^2.4.9
+  auto_route_generator: ^8.0.0
+  json_serializable: ^6.8.0
+  
+ 
+  mocktail: ^1.0.4
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/images/
